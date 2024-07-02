@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NBL Créateur de site Web</title>
-  <link rel="shortcut icon" href="./assets/img/" />
+  <meta name="description" content="Découvrez notre société de développement web basée à Vienne 38200, spécialisée dans la création de sites web modernes et performants. Nous desservons également la région de Lyon. Contactez-nous pour vos projets web !">
+
+  <title>NBL Créateur de site Web - Développement Web à Vienne et Lyon</title>
+  <link rel="shortcut icon" href="./assets/img/NBL_logo_blanc.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/styles/index.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "NBL Créateur de site Web",
+      "image": "http://www.votre-site.com/assets/img/NBL_logo_blanc.png",
+      "@id": "",
+      "url": "http://www.votre-site.com",
+      "telephone": "+33-6-51-95-53-88",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Rue Exemple",
+        "addressLocality": "Vienne",
+        "postalCode": "38200",
+        "addressCountry": "FR"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/patrick-barbosa-b43204239",
+        "https://github.com/Patrick1607B"
+      ]
+    }
+    </script>    
 </head>
 
 <body>
@@ -45,21 +69,32 @@
     <section id="section1" class="section1">
       <span>Juillet, 2024</span>
       <h2>Mes réalisations</h2>
-      <p>Ce projet est en cours de dévellopement, il concerne un site pour une société de rachet et de vente immobiliéres. LA sortie du site Web est prévu pour Juillet</p>
+      <p>Ce projet est en cours de développement, il concerne un site pour une société de rachat et de ventes immobilières. La sortie du site Web est prévue pour Juillet</p>
       <img id="picture-projet-one" src="./assets/img/A_Rimmo.webp" alt="img-hiking">
-      
-        <!-- <button class="btn">plus de détails</button> -->
-        <button class="btn"><a href="./projet1.html">Plus de détails</a></button>
-
-        
-
+      <button class="btn" id="openModalBtn">Plus de détails</button>
+      <!-- Ma fenêtre modale du bien -->
+      <div id="modal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <article id="article-modal-un">
+                <img id="picture-projet-one-modal" src="./assets/img/Capture d’écran 2024-07-01 210053.jpg" alt="img-hiking">
+                <p>Sur cette vue, vous pouvez voir les informations du bien qui s'affichent uniquement si elles concernent le bien présenté. On peut aussi voir le DPE, qui est dynamique et entièrement créé en code.</p>
+              </article>
+              <article id="article-modal-un">
+                <img id="picture-projet-two-modal" src="./assets/img/géorisque.jpg" alt="Logo Géorisque">
+                <p>Le lien Géorisque ne vous emmène pas seulement sur le site du portail Géorisque, mais de manière dynamique, il vous dirige vers la page du bien présenté.</p>
+              </article>
+              <article id="article-modal-un">
+                <img id="picture-projet-three-modal" src="./assets/img/Capture d’écran 2024-07-02 110311.jpg" alt="Logo Géorisque">
+                <p>Pour la partie technique, tout ce projet est développé avec le framework Symfony (PHP) ainsi qu'en JavaScript, HTML, et CSS. Le morceau de code concerne le lien Géorisque qui transmet de manière dynamique toutes les informations du bien, y compris son adresse et sa géolocalisation.</p>
+              </article>
+          </div>
       </div>
-    </section>
-
+  </section>
     <section class="section2">
       <div class="left-part">
         <span>Août, 2024</span>
-        <h3>DM plombeire</h3>
+        <h3>DM plomberie</h3>
         <img class="picture-projet" src="./assets/img/dmplombeirecapture.jpg" alt="forest">
         <p>Ce site sera prêt pour le mois d'août 2024. Il concerne un plombier spécialisé dans la plomberie industrielle.</p>
         <!-- <button class="btn">full story</button> -->
@@ -77,7 +112,7 @@
   <footer>
     <div id="parcours">
       <h3>Mon parcours</h3>
-      <p>J'ai travaillé pendante plus de 20ans dans l'automobiles comme magasinier et responsable magasin.</p>
+      <p>J'ai travaillé pendant plus de 20 ans dans l'automobile comme magasinier et responsable de magasin.</p>
       <p>En 2021, j'ai ressenti le besoin de relever un nouveau défi. J'ai exploré de nombreux métiers susceptibles de m'intéresser, sans réaliser immédiatement l'évidence : ce qui me passionne depuis des années. Malgré les conseils de mon entourage, qui me suggérait de me tourner vers l'informatique, je n'avais pas encore envisagé cette voie. Pourtant, en y réfléchissant, quoi de mieux que de devenir développeur quand on aime l'informatique et la création ? </p>
       <p>
         J'ai donc décidé de me lancer. D'abord en autodidacte chez moi, puis en suivant des formations structurées. Aujourd'hui, je me lance en freelance, tout en restant ouvert à toute opportunité d'intégrer une entreprise qui me donnerait ma chance en tant que développeur web.
@@ -131,6 +166,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -252,6 +252,7 @@ main img:hover {
 main .section1 {
   width: 80%;
   margin: 0 auto;
+  position: relative;
 }
 main .section1 img {
   width: 100%;
@@ -310,7 +311,76 @@ main .section1 p {
   font-size: 0.8rem;
 }
 main .section1 .btn {
-  margin: 50px 0 90px;
+  margin: 50px 0 40px;
+}
+main .section1 .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+main .section1 .modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+main .section1 .modal .modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+main .section1 .modal .modal-content .close:hover, main .section1 .modal .modal-content .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+main .section1 .modal .modal-content #article-modal-un {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 700px) {
+  main .section1 .modal .modal-content #article-modal-un {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+main .section1 .modal .modal-content #picture-projet-one-modal {
+  width: 200px;
+  height: 150px;
+}
+main .section1 .modal .modal-content #picture-projet-one-modal:hover {
+  position: absolute;
+  width: 550px;
+  height: 400px;
+  z-index: 1000;
+}
+main .section1 .modal .modal-content #picture-projet-two-modal {
+  width: 180px;
+  height: 120px;
+}
+main .section1 .modal .modal-content #picture-projet-three-modal {
+  width: 220px;
+  height: 150px;
+  position: relative;
+}
+main .section1 .modal .modal-content #picture-projet-three-modal:hover {
+  position: absolute;
+  width: 680px;
+  z-index: 1000;
 }
 main .section2 {
   display: grid;
@@ -385,14 +455,14 @@ footer #parcours h3 {
 footer #parcours p {
   font-size: 0.8rem;
 }
-footer input[type=text],
-footer textarea {
+footer #parcours input[type=text],
+footer #parcours textarea {
   background: none;
   border: 1px solid rgb(209, 209, 209);
   border-radius: 4px;
   resize: none;
 }
-footer .submit-container {
+footer #parcours .submit-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,12 +470,11 @@ footer .submit-container {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-footer .submit-container .btn {
+footer #parcours .submit-container .btn {
   color: rgb(105, 105, 105);
   border: 2px solid rgb(105, 105, 105);
 }
-
-.infos-contact {
+footer .infos-contact {
   border-left: 1px solid rgb(209, 209, 209);
   display: grid;
   grid-template-rows: repeat(5, 10%);
@@ -413,12 +482,12 @@ footer .submit-container .btn {
       align-content: center;
 }
 @media screen and (max-width: 900px) {
-  .infos-contact div:nth-child(1) {
+  footer .infos-contact div:nth-child(1) {
     border-top: 1px solid rgb(209, 209, 209);
     padding-bottom: 20px;
   }
 }
-.infos-contact div {
+footer .infos-contact div {
   border-bottom: 1px solid rgb(209, 209, 209);
   display: grid;
   grid-template-columns: 30% 70%;
@@ -427,11 +496,11 @@ footer .submit-container .btn {
           align-items: center;
 }
 @media screen and (max-width: 900px) {
-  .infos-contact div {
-    grid-template-columns: 45% 55%;
+  footer .infos-contact div {
+    grid-template-columns: 40% 60%;
   }
 }
-.infos-contact div h3 {
+footer .infos-contact div h3 {
   font-family: inter-bold, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -440,18 +509,18 @@ footer .submit-container .btn {
   text-align: left;
   color: rgb(105, 105, 105);
 }
-.infos-contact div p {
+footer .infos-contact div p {
   font-size: 0.8rem;
   line-height: 26px;
   text-align: left;
   color: grey;
 }
-.infos-contact .social ul {
+footer .infos-contact .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.infos-contact .social ul li {
+footer .infos-contact .social ul li {
   border: 1px solid rgb(209, 209, 209);
   border-radius: 150px;
   height: 40px;
@@ -467,4 +536,11 @@ footer .submit-container .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 700px) {
+  footer .infos-contact {
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    height: 250px;
+  }
 }/*# sourceMappingURL=index.css.map */
