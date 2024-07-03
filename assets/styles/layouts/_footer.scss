@@ -16,6 +16,7 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     border: 1px solid $grey3;
+    align-items: center;
 
     h3 {
       @include title;

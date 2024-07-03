@@ -6,12 +6,13 @@ main {
   img {
     width: 100%;
     border: 1px solid rgb(139, 139, 139);
-
-    &:hover {
-      width: 105%;
-      height: 250px;
-    }
+  
+      &:hover {
+        width: 105%;
+        height: 250px;
+      }
   }
+  
 
   .section1 {
     width: 80%;
@@ -19,11 +20,12 @@ main {
     position: relative;
 
     img {
-        width: 100%;
-
+      width: 100%;
+      border: 1px solid rgb(139, 139, 139);
+ 
         &:hover {
-            width: 105%;
-            height: 450px;
+          width: 105%;
+          height: 450px;
         }
     }
 

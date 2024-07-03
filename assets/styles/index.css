@@ -256,6 +256,7 @@ main .section1 {
 }
 main .section1 img {
   width: 100%;
+  border: 1px solid rgb(139, 139, 139);
 }
 main .section1 img:hover {
   width: 105%;
@@ -445,6 +446,9 @@ footer #parcours {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border: 1px solid rgb(105, 105, 105);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer #parcours h3 {
   font-family: inter-bold, sans-serif;
