@@ -541,6 +541,8 @@ footer .infos-contact .social ul li {
   footer .infos-contact {
     -ms-flex-line-pack: distribute;
         align-content: space-around;
-    height: 250px;
+    min-height: 280px;
+    height: auto;
+    padding: 35px;
   }
 }/*# sourceMappingURL=index.css.map */
