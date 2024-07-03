@@ -497,7 +497,7 @@ footer .infos-contact div {
 }
 @media screen and (max-width: 900px) {
   footer .infos-contact div {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
   }
 }
 footer .infos-contact div h3 {
@@ -543,6 +543,6 @@ footer .infos-contact .social ul li {
         align-content: space-around;
     min-height: 280px;
     height: auto;
-    padding: 35px;
+    padding-bottom: 35px;
   }
 }/*# sourceMappingURL=index.css.map */
